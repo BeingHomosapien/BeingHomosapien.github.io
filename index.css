@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+:root{
+    --maincolor:#eaeaea;
+    --secondayColor:white;
+    --mainText: black;
+    --secondayText : #4b5156;
+    --borderColor: #c1c1c1;
+    --font:'Acme', sans-serif;
+}
+*{
+    font-family:var(--font);
+}
+html, body{
+    padding:0;
+    margin:0;
+} 
+
+h1, h2, h3, h4, h5, h6, strong{
+    color:var(--mainText);
+    font-weight:500;
+}
+
+p, li, span, label, input, textarea{
+    color:var(--secondayText);
+}
+
+.S1{
+    background-color: var(--maincolor);
+    border-bottom:2px solid var(--borderColor);
+    overflow:auto;
+}
+
+.main-container{
+    width:1200px;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+    color:#17a2b8;
+}
+
+ul{
+    list-style:none;
+}
+
+h1{font-size:56px;}
+h2{font-size:36px;}
+h3{font-size:28px;}
+h4{font-size:24px;}
+h5{font-size:20px;}
+h6{font-size:16px;}
+
+.S2{
+    background-color: var(--secondayColor);
+    border-bottom:2px solid var(--borderColor);
+    overflow:auto;
+}
+
+
+.greetings{
+    display:grid;
+    text-align:center;
+    justify-content: center;
+    min-height:10rem;
+}
+
+.navbar{
+    background-color: var(--secondayColor);
+    border:1px solid var(--secondayText);
+    box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3em 30em;
+    grid-template-areas: 
+        'nav nav' 
+        'left-column right-column' ;
+
+    border-radius:5px 5px 0 0 ;
+}
+
+.nav{
+    border-bottom:1px solid var(--borderColor);
+    grid-area: nav;
+    display:flex;
+    justify-content: space-between; /* This will create the max space between the elements of the flex */
+    align-items: center;
+    background-color: var(--maincolor);
+    border-radius:5px 5px 0 0 ;
+}
+
+.left-column{
+    grid-area: left-column;
+}
+
+.right-column{
+    grid-area:right-column;
+}
+
+.dots-wrapper{
+    display:flex;
+    align-items:center;
+}
+
+.dots{
+    background-color: black;
+    width:15px;
+    height:15px;
+    border-radius:50%;
+    box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+    margin:5px;
+    transition:0.25s ease;
+}
+
+#dot1{
+    background-color:red;
+}
+
+#dot2{
+    background-color:rgb(29, 124, 29);
+}
+
+#dot3{
+    background-color:rgb(255, 255, 30);
+}
+
+#navigation{
+    margin:0;
+    padding:10px;
+}
+
+#navigation li{
+    display:inline-block;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.dots:hover{
+    width:20px;
+    height:20px;
+}
+
+@media (max-width:1200px){
+    .main-container{
+        width:95%;
+        margin: 0 auto;
+    }
+}
