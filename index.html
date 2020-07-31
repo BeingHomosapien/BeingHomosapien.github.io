@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rohan Raj Kansal</title>
-    <link rel="stylesheet" href="index.css">    
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="./">   
+    <script src="./index.js"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 </head>
 <body>
     <section class="S1">
@@ -99,9 +103,14 @@
     </section>
     <section class="S1">
         <div class="main-container">
-            <h3 style="text-align:center;">Some of My Past Projects</h3>
+            <h3 style="text-align:center;">Some of MY Major Projects</h3>
+            <div class = "filter">
+                <div id="all" class="filters active-filter">All</div>
+                <div id="major" class="filters">Major</div>
+                <div id="minor" class="filters">Minor</div>
+            </div>
             <div class="project-section">
-                <div class="project">
+                <div class="all major project">
                     <div class="project-overlay">
                         <a id="link" href="#">Github Link</a>
                     </div>
@@ -112,7 +121,7 @@
                     </div>
                 </div>
 
-                <div class="project">
+                <div class="all major project">
                     <div class="project-overlay">
                         <a id="link" href="#">Github Link</a>
                     </div>
@@ -123,7 +132,7 @@
                     </div>
                 </div>
 
-                <div class="project">
+                <div class="all minor project">
                     <div class="project-overlay">
                         <a id="link" href="#">Github Link</a>
                     </div>
@@ -133,7 +142,6 @@
                         <p class="project-intro">This is a Sentence</p>
                     </div>
                 </div>
-
             </div> 
         </div>
     </section>
@@ -144,5 +152,7 @@
             <a href="#">Link</a> 
         </div>
     </section>
+
+    <script src="./filter.js"></script>
 </body>
 </html>
