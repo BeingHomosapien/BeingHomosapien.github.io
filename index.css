@@ -163,6 +163,7 @@ h6{font-size:16px;}
     border: 2px solid var(--theme-border);
     cursor: pointer;
     margin:0 5px;
+    transition:0.25s ease;
 }
 
 .theme-dot:hover{
@@ -269,13 +270,87 @@ h6{font-size:16px;}
 
 .about-container{
     display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); /* Faster way to make grid more responsive */
+    grid-template-columns: repeat(auto-fit, minmax(335px, 1fr)); /* Faster way to make grid more responsive */
     padding-top:50px;
     padding-bottom:50px;
+    gap:50px;
 }
 
 #skills{
     background-color: var(--previewshadow);
     display:flex;
     justify-content: space-evenly;
+}
+
+.social-links{
+    display:grid;
+    align-content: center;
+    text-align:center;
+}
+
+#social{
+    width:100%;
+}
+
+/* Project Section */
+
+.project-section{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, 320px);
+    gap:20px;
+    justify-content: center;
+    padding-bottom:50px;
+}
+
+.project{
+    border:2px solid var(--borderColor);
+    box-shadow: -2px 7px 21px -9px rgba(0, 0, 0, 0.75);
+    position:relative;
+    overflow: hidden;
+}
+
+.project-preview{
+    background-color:white;
+    padding:15px;
+}
+
+.project-title{
+    color:black;
+    margin: 0;
+}
+
+.project-intro{
+    color:#4b5156;
+    font-size: 16px;
+}
+
+#thumbnail{
+    display:block;
+    height:180px;
+    width:100%;
+    object-fit: cover;
+}
+
+.project-overlay{
+    opacity:0;
+    background-color: rgba(0, 0, 0, 0.5);
+    height:180px;
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    transition:1s ease;
+    transform:translateY(100%);
+}
+
+.project:hover .project-overlay{
+    opacity:1;
+    transform:translateY(0);
+}
+
+#link{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
 }
