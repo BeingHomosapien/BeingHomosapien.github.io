@@ -8,7 +8,7 @@
     <link rel="icon" href="./">   
     <script src="./index.js"></script> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
+    <link id="theme-changer" rel="stylesheet" href="index.css">
 </head>
 <body>
     <section class="S1">
@@ -33,10 +33,10 @@
                     <img src="Images/rohan.jpg" id="profile-pic">
                     <h5 style="line-height: 0; text-align:center;">Personalize Theme</h5>
                     <div class="theme-dot-wrapper">
-                        <div id="light-mode" class="theme-dot"></div>
-                        <div id="blue-mode" class="theme-dot"></div>
-                        <div id="green-mode" class="theme-dot"></div>
-                        <div id="red-mode" class="theme-dot"></div>
+                        <div data-mode="index" id="light-mode" class="theme-dot"></div>
+                        <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+                        <div data-mode="green" id="green-mode" class="theme-dot"></div>
+                        <div data-mode="red" id="red-mode" class="theme-dot"></div>
                     </div>
 
                     <p id="note">*This theme setting will be saved for <br> your next visit</p>
@@ -103,43 +103,49 @@
     </section>
     <section class="S1">
         <div class="main-container">
-            <h3 style="text-align:center;">Some of MY Major Projects</h3>
+            <h3 id = "info" style="text-align:center;">Some of MY Major Projects</h3>
             <div class = "filter">
                 <div id="all" class="filters active-filter">All</div>
                 <div id="major" class="filters">Major</div>
                 <div id="minor" class="filters">Minor</div>
             </div>
             <div class="project-section">
-                <div class="all major project">
-                    <div class="project-overlay">
-                        <a id="link" href="#">Github Link</a>
-                    </div>
-                    <img id="thumbnail" src="./Images/rohan.jpg">
-                    <div class="project-preview">
-                        <h4 class="project-title">Project Intro</h4>
-                        <p class="project-intro">This is a Sentence</p>
-                    </div>
-                </div>
-
-                <div class="all major project">
-                    <div class="project-overlay">
-                        <a id="link" href="#">Github Link</a>
-                    </div>
-                    <img id="thumbnail" src="./Images/rohan.jpg">
-                    <div class="project-preview">
-                        <h4 class="project-title">Project Intro</h4>
-                        <p class="project-intro">This is a Sentence</p>
+                <div class="all major">
+                    <div  class="all major project">
+                        <div class="project-overlay">
+                            <a id="link" href="#">Github Link</a>
+                        </div>
+                        <img id="thumbnail" src="./Images/rohan.jpg">
+                        <div class="project-preview">
+                            <h4 class="project-title">Project Intro</h4>
+                            <p class="project-intro">This is a Sentence</p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="all minor project">
-                    <div class="project-overlay">
-                        <a id="link" href="#">Github Link</a>
+                <div class="all major">
+                    <div class="all major project">
+                        <div class="project-overlay">
+                            <a id="link" href="#">Github Link</a>
+                        </div>
+                        <img id="thumbnail" src="./Images/rohan.jpg">
+                        <div class="project-preview">
+                            <h4 class="project-title">Project Intro</h4>
+                            <p class="project-intro">This is a Sentence</p>
+                        </div>
                     </div>
-                    <img id="thumbnail" src="./Images/rohan.jpg">
-                    <div class="project-preview">
-                        <h4 class="project-title">Project Intro</h4>
-                        <p class="project-intro">This is a Sentence</p>
+                </div>
+
+                <div class="all minor">
+                    <div class="all minor project">
+                        <div class="project-overlay">
+                            <a id="link" href="#">Github Link</a>
+                        </div>
+                        <img id="thumbnail" src="./Images/rohan.jpg">
+                        <div class="project-preview">
+                            <h4 class="project-title">Project Intro</h4>
+                            <p class="project-intro">This is a Sentence. Seriously this is only a sentence.</p>
+                        </div>
                     </div>
                 </div>
             </div> 
@@ -154,5 +160,6 @@
     </section>
 
     <script src="./filter.js"></script>
+    <script src="./index.js"></script>
 </body>
 </html>

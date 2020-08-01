@@ -17,19 +17,28 @@
 html, body{
     padding:0;
     margin:0;
+    height:100%;
 } 
+body{
+    background-attachment: fixed;
+    background-image: url("./Images/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 
 h1, h2, h3, h4, h5, h6, strong{
     color:var(--mainText);
     font-weight:500;
 }
 
+
 p, li, span, label, input, textarea{
     color:var(--secondayText);
 }
 
 .S1{
-    background-color: var(--maincolor);
+    /* background-color: var(--maincolor); */
     border-bottom:2px solid var(--borderColor);
     overflow: auto;
 }
@@ -67,6 +76,18 @@ h6{font-size:16px;}
     text-align:center;
     justify-content: center;
     min-height:10rem;
+}
+
+.greetings h1{
+    color: white;
+}
+
+#info{
+    color:white;
+}
+
+#navigation a{
+    color:var(--mainText);
 }
 
 #profile-pic{
