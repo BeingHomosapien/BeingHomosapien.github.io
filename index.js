@@ -1,3 +1,12 @@
+var theme = localStorage.getItem("theme");
+
+if(theme == null){
+    setTheme("index");
+}
+else{
+    setTheme(theme);
+}
+
 var Dots = document.getElementsByClassName("theme-dot");
 
 for(var i=0; i<Dots.length; i++){
@@ -11,4 +20,5 @@ for(var i=0; i<Dots.length; i++){
 
 function setTheme(mode){
     document.getElementById("theme-changer").href = mode+".css";
+    localStorage.setItem("theme", mode);
 }
