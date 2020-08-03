@@ -195,6 +195,7 @@ h6{font-size:16px;}
     border-width: 5px;
 }
 
+
 #light-mode{
     background-color:white;
 }
@@ -433,4 +434,84 @@ h6{font-size:16px;}
     border-radius:2em;
 }
 
+@media screen and (max-width:740px) and (min-width:500px){
+    .links{
+        padding-left:20vw;
+    }
+}
 
+.email-me{
+    padding-bottom:50px;
+}
+form{
+    border:2px solid var(--borderColor);
+    padding:25px;
+    position:relative;
+}
+
+label{
+    font-size:24px;
+    margin-bottom:10px;
+}
+input{
+    width:100%;
+    line-height: 30px;
+    color:black;
+    border:1px solid var(--borderColor);
+    border-radius:0.5em;
+    margin-bottom:15px;
+}
+
+.name{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom:15px;
+}
+
+.name input{
+    width:90%;
+    margin-bottom:0px;
+}
+
+legend{
+    position:absolute;
+    padding:3px 5px;
+    color:var(--secondayText);
+    font-size:28px;
+    z-index:100;
+    left:30%;
+    top:-22px;
+    background-color: var(--secondayColor);
+    border-radius:0.6em;
+    border:0.5px solid var(--borderColor);
+    box-shadow: -5px 8px 11px -9px var(--secondayText) ;
+}
+
+textarea{
+    width:100%;
+    height:150px;
+    overflow-x: auto;
+    font-size:20px;
+    color:black;
+}
+
+.contact-message{
+    font-size:20px;
+    font-style:italic;
+    padding-top:8px;
+}
+
+#send{
+    background-color: transparent;
+    font-size: 24px;
+    margin:20px 0;
+    color:var(--secondayText);
+    border:2px solid var(--borderColor);
+    cursor:pointer;
+    border-radius:2em;
+}
+
+.submit-button{
+    display:flex;
+    justify-content: center;
+}
