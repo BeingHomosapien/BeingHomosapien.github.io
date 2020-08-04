@@ -6,204 +6,217 @@
     <title>Rohan Raj Kansal</title>
     <link rel="stylesheet" href="index.css">
     <link rel="icon" href="./">   
-    <script src="./index.js"></script> 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link id="theme-changer" rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" type="text/css">
 </head>
-<body>
-    <section class="S1">
-        <div class="main-container">
-            <div class="greetings">
-                <h1>Hi, I'm Rohan Raj Kansal</h1>
-            </div>
-            <div class="navbar">
-                <div class="nav">
-                    <div class="dots-wrapper">
-                        <div id="dot1" class="dots"></div>
-                        <div id="dot2" class="dots"></div>
-                        <div id="dot3" class="dots"></div>
-                    </div>
-                    <div class="contact">
-                        <ul id="navigation">
-                            <li><a href="#">Contacts</a></li>
-                        </ul>
-                    </div>
+<body onload="preload()">
+    <div class="preloader"></div>
+    <main>
+        <section class="S1">
+            <div class="main-container">
+                <div class="greetings">
+                    <h1>Hi, I'm Rohan Raj Kansal</h1>
                 </div>
-                <div class="left-column">
-                    <img src="Images/rohan.jpg" id="profile-pic">
-                    <h5 style="line-height: 0; text-align:center;">Personalize Theme</h5>
-                    <div class="theme-dot-wrapper">
-                        <div data-mode="index" id="light-mode" class="theme-dot"></div>
-                        <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
-                        <div data-mode="green" id="green-mode" class="theme-dot"></div>
-                        <div data-mode="red" id="red-mode" class="theme-dot"></div>
-                    </div>
-
-                    <p id="note">*This theme setting will be saved for <br> your next visit</p>
-                </div>
-                <div class="right-column">
-                    <div class="preview-shadow">
-                        <div id="preview">
-                            <div id="ul" class="corner"></div>
-                            <div id="ur" class="corner"></div>
-    
-                            <h3>What I Do?</h3>
-                            <p>I am developer, a freelance web-developer. I am a full stack developer. Also, I'm a programmer. I love to programm in any language and in any field.</p>
-                        
-                            <div id="ll" class="corner"></div>
-                            <div id="lr" class="corner"></div>
+                <div class="navbar">
+                    <div class="nav">
+                        <div class="dots-wrapper">
+                            <div id="dot1" class="dots"></div>
+                            <div id="dot2" class="dots"></div>
+                            <div id="dot3" class="dots"></div>
                         </div>
-                    </div> 
-                </div>
-            </div>
-
-        </div>
-    </section>
-    <section class="S2">
-        <div class="main-container">
-            <div class="about-container">
-
-                <div class="about-me">
-                    <h4>Know Me!!</h4>
-                    <p>I am a under-graduate student at IIT Mandi. I am pursuiung my Computer Science Engineering and I will graduate in 2023.</p>
-                    <p>I love to program stuff weather it be the typical software programming or making some cool looking websites. I am also intersed in animations(2D) so currently I am learning how to create SVG animation in HTML.</p>
-
-                    <hr>
-
-                    <h4>Top Expertise</h4>
-                    <p> Really Good at web development weather it be the front end or the backend. Helped in making of various college websites:
-                        <a href="./reusme.pdf" target="blank">Download Resume</a>
-                    </p>
-
-                    <div id="skills">
-                        <ul>
-                            <li>Python</li>
-                            <li>Flask</li>
-                            <li>MySQL</li>
-                            <li>Redis</li>
-                        </ul>
-
-                        <ul>
-                            <li>NodeJS</li>
-                            <li>ExpressJS</li>
-                            <li>MongoDB</li>
-                            <li>C++</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="social-links">
-                    <img id ="social" src="./Images/Social.png"> 
-                    <h3>Find me on Facebook and Github</h3>
-                    <a href="">Facebook</a><br>
-                    <a href="">Github</a>               
-                 </div>
-
-            </div>
-        </div>
-    </section>
-    <section class="S1">
-        <div class="main-container">
-            <h3 id = "info" style="text-align:center;">Some of MY Major Projects</h3>
-            <div class = "filter">
-                <div id="all" class="filters active-filter">All</div>
-                <div id="major" class="filters">Major</div>
-                <div id="minor" class="filters">Minor</div>
-            </div>
-            <div class="project-section">
-                <div class="all major">
-                    <div  class="all major project">
-                        <div class="project-overlay">
-                            <a id="link" href="#">Github Link</a>
-                        </div>
-                        <img id="thumbnail" src="./Images/rohan.jpg">
-                        <div class="project-preview">
-                            <h4 class="project-title">Project Intro</h4>
-                            <p class="project-intro">This is a Sentence</p>
+                        <div class="contact">
+                            <ul id="navigation">
+                                <li><a href="#">Contacts</a></li>
+                            </ul>
                         </div>
                     </div>
-                </div>
+                    <div class="left-column">
+                        <img src="Images/rohan.jpg" id="profile-pic">
+                        <h5 style="line-height: 0; text-align:center;">Personalize Theme</h5>
+                        <div class="theme-dot-wrapper">
+                            <div data-mode="index" id="light-mode" class="theme-dot"></div>
+                            <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+                            <div data-mode="green" id="green-mode" class="theme-dot"></div>
+                            <div data-mode="red" id="red-mode" class="theme-dot"></div>
+                        </div>
 
-                <div class="all major">
-                    <div class="all major project">
-                        <div class="project-overlay">
-                            <a id="link" href="#">Github Link</a>
-                        </div>
-                        <img id="thumbnail" src="./Images/rohan.jpg">
-                        <div class="project-preview">
-                            <h4 class="project-title">Project Intro</h4>
-                            <p class="project-intro">This is a Sentence</p>
-                        </div>
+                        <p id="note">*This theme setting will be saved for <br> your next visit</p>
                     </div>
-                </div>
-
-                <div class="all minor">
-                    <div class="all minor project">
-                        <div class="project-overlay">
-                            <a id="link" href="#">Github Link</a>
-                        </div>
-                        <img id="thumbnail" src="./Images/rohan.jpg">
-                        <div class="project-preview">
-                            <h4 class="project-title">Project Intro</h4>
-                            <p class="project-intro">This is a Sentence. Seriously this is only a sentence.</p>
-                        </div>
-                    </div>
-                </div>
-            </div> 
-        </div>
-    </section>
-    <section class="S2">
-        <div class="main-container">
-            <h3 id="contact-section" style="text-align:center;">Contact Information</h3>
-            <div class="contact-info">
-                <div class="links">
-                    <div class="link-container">
-                        <img src="./Images/phone.png">
-                        <p>+916239642215</p>
-                    </div>
-                    <div class="link-container">
-                        <img src="./Images/whatsapp.png">
-                        <p>+918558911974</p>
-                    </div>
-                    <div class="link-container">
-                        <img src="./Images/gplus.png">
-                        <p>rohanraj378@gmail.com</p>
-                    </div>
-                    <div class="link-container">
-                        <img src="./Images/instagram.png">
-                        <p>rohan.10_45</p>
-                    </div>
-                    <p class="contact-message">*Please feel free to contact me. I will get back to you<br>as soon as possible..</p>
-                </div>
-                <div class="email-me">
-                    <form>
-                        <legend>Email Me:</legend>
-                        <div class="name">
-                            <div>
-                                <label>First Name</label><br>
-                                <input placeholder="Enter First Name" type="text">
+                    <div class="right-column">
+                        <div class="preview-shadow">
+                            <div id="preview">
+                                <div id="ul" class="corner"></div>
+                                <div id="ur" class="corner"></div>
+        
+                                <h3>What I Do?</h3>
+                                <p>I am developer, a freelance web-developer. I am a full stack developer. Also, I'm a programmer. I love to programm in any language and in any field.</p>
+                            
+                                <div id="ll" class="corner"></div>
+                                <div id="lr" class="corner"></div>
                             </div>
-                            <div>
-                                <label>Last Name</label><br>
-                                <input type="text" placeholder="Enter Last Name">
+                        </div> 
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="S2">
+            <div class="main-container">
+                <div class="about-container">
+
+                    <div class="about-me">
+                        <h4>Know Me!!</h4>
+                        <p>I am a under-graduate student at IIT Mandi. I am pursuiung my Computer Science Engineering and I will graduate in 2023.</p>
+                        <p>I love to program stuff weather it be the typical software programming or making some cool looking websites. I am also intersed in animations(2D) so currently I am learning how to create SVG animation in HTML.</p>
+
+                        <hr>
+
+                        <h4>Top Expertise</h4>
+                        <p> Really Good at web development weather it be the front end or the backend. Helped in making of various college websites:
+                            <a href="./reusme.pdf" target="blank">Download Resume</a>
+                        </p>
+
+                        <div id="skills">
+                            <ul>
+                                <li>Python</li>
+                                <li>Flask</li>
+                                <li>MySQL</li>
+                                <li>Redis</li>
+                            </ul>
+
+                            <ul>
+                                <li>NodeJS</li>
+                                <li>ExpressJS</li>
+                                <li>MongoDB</li>
+                                <li>C++</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <img id ="social" src="./Images/Social.png"> 
+                        <h3>Find me on Facebook and Github</h3>
+                        <a href="">Facebook</a><br>
+                        <a href="">Github</a>               
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="S1">
+            <div class="main-container">
+                <h3 id = "info" style="text-align:center;">Some of MY Major Projects</h3>
+                <div class = "filter">
+                    <div id="all" class="filters active-filter">All</div>
+                    <div id="major" class="filters">Major</div>
+                    <div id="minor" class="filters">Minor</div>
+                </div>
+                <div class="project-section">
+                    <div class="all major">
+                        <div  class="all major project">
+                            <div class="project-overlay">
+                                <a id="link" href="#">Github Link</a>
+                            </div>
+                            <img id="thumbnail" src="./Images/rohan.jpg">
+                            <div class="project-preview">
+                                <h4 class="project-title">Project Intro</h4>
+                                <p class="project-intro">This is a Sentence</p>
                             </div>
                         </div>
-                        <label>Email Address</label><br>
-                        <input type = "text" placeholder = "Enter Your Email"><br>
-                        <label>Subject</label><br>
-                        <input type = "text" placeholder = "Enter the subject"><br>
-                        <label>Message</label><br>
-                        <textarea placeholder="Enter your message"></textarea>
-                        <div class="submit-button">
-                            <button id="send" type="submit">Send Message</button>
-                        </div>
-                    </form>
-                </div>
-            </div> 
-        </div>
-    </section>
+                    </div>
 
+                    <div class="all major">
+                        <div class="all major project">
+                            <div class="project-overlay">
+                                <a id="link" href="#">Github Link</a>
+                            </div>
+                            <img id="thumbnail" src="./Images/rohan.jpg">
+                            <div class="project-preview">
+                                <h4 class="project-title">Project Intro</h4>
+                                <p class="project-intro">This is a Sentence</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="all minor">
+                        <div class="all minor project">
+                            <div class="project-overlay">
+                                <a id="link" href="#">Github Link</a>
+                            </div>
+                            <img id="thumbnail" src="./Images/rohan.jpg">
+                            <div class="project-preview">
+                                <h4 class="project-title">Project Intro</h4>
+                                <p class="project-intro">This is a Sentence. Seriously this is only a sentence.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </section>
+        <section class="S2">
+            <div class="main-container">
+                <h3 id="contact-section" style="text-align:center;">Contact Information</h3>
+                <div class="contact-info">
+                    <div class="links">
+                        <div class="link-container">
+                            <img src="./Images/phone.png">
+                            <p>+916239642215</p>
+                        </div>
+                        <div class="link-container">
+                            <img src="./Images/whatsapp.png">
+                            <p>+918558911974</p>
+                        </div>
+                        <div class="link-container">
+                            <img src="./Images/gplus.png">
+                            <p>rohanraj378@gmail.com</p>
+                        </div>
+                        <div class="link-container">
+                            <img src="./Images/instagram.png">
+                            <p>rohan.10_45</p>
+                        </div>
+                        <p class="contact-message">*Please feel free to contact me. I will get back to you<br>as soon as possible..</p>
+                    </div>
+                    <div class="email-me">
+                        <form>
+                            <legend>Email Me:</legend>
+                            <div class="name">
+                                <div>
+                                    <label>First Name</label><br>
+                                    <input placeholder="Enter First Name" type="text">
+                                </div>
+                                <div>
+                                    <label>Last Name</label><br>
+                                    <input type="text" placeholder="Enter Last Name">
+                                </div>
+                            </div>
+                            <label>Email Address</label><br>
+                            <input type = "text" placeholder = "Enter Your Email"><br>
+                            <label>Subject</label><br>
+                            <input type = "text" placeholder = "Enter the subject"><br>
+                            <label>Message</label><br>
+                            <textarea placeholder="Enter your message"></textarea>
+                            <div class="submit-button">
+                                <button id="send">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div> 
+            </div>
+        </section>
+    </main>
+    <script>
+        var preloader = document.querySelector(".preloader");
+        var main = document.querySelector("main");
+        function preload(){
+            preloader.style.height = 0;
+            preloader.style.opacity = 0;
+            main.style.opacity = 1;
+            main.style.height = "100%";
+        }
+    </script>
     <script src="./filter.js"></script>
     <script src="./index.js"></script>
+    <script src="./mail.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
 </body>
 </html>
